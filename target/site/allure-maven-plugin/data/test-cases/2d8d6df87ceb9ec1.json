@@ -1,0 +1,108 @@
+{
+  "uid" : "2d8d6df87ceb9ec1",
+  "name" : "Test Execution TC1",
+  "fullName" : "my.test.frw.suites.SampleSuiteITest.testLogin",
+  "historyId" : "909339502ebd5db2e3ad252fee8b2cf6",
+  "time" : {
+    "start" : 1569087842788,
+    "stop" : 1569087842913,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "description" : "Description - Test Execution TC1",
+  "descriptionHtml" : "<p>Description - Test Execution TC1</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "Type user / user",
+      "time" : {
+        "start" : 1569087842881,
+        "stop" : 1569087842881,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "user"
+      }, {
+        "name" : "password",
+        "value" : "password"
+      } ]
+    } ],
+    "attachments" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1569087843506,
+      "stop" : 1569087843506,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "MyArtifactSuite"
+  }, {
+    "name" : "suite",
+    "value" : "AllSuites"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6AA63HT"
+  }, {
+    "name" : "thread",
+    "value" : "14908@DESKTOP-6AA63HT.pool-1-thread-3(13)"
+  }, {
+    "name" : "epic",
+    "value" : "Allure examples"
+  }, {
+    "name" : "feature",
+    "value" : "TestNG support"
+  }, {
+    "name" : "story",
+    "value" : "Basic login test"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "org.testng.TestRunner@281e31d4"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 3,
+    "unknown" : 0,
+    "total" : 4
+  },
+  "time" : {
+    "minDuration" : 16,
+    "maxDuration" : 7265,
+    "sumDuration" : 7672,
+    "start" : 1569087842756,
+    "stop" : 1569087850021,
+    "duration" : 7265
+  },
+  "children" : [ {
+    "uid" : "5c87152634704bee",
+    "name" : "TestNG support",
+    "time" : {
+      "minDuration" : 16,
+      "maxDuration" : 7265,
+      "sumDuration" : 7672,
+      "start" : 1569087842756,
+      "stop" : 1569087850021,
+      "duration" : 7265
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "6b7a88838cc8c34",
+      "name" : "Default story",
+      "time" : {
+        "minDuration" : 16,
+        "maxDuration" : 7265,
+        "sumDuration" : 7547,
+        "start" : 1569087842756,
+        "stop" : 1569087850021,
+        "duration" : 7265
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "e3d42fd91000ca9f",
+        "name" : "Test 4",
+        "time" : {
+          "start" : 1569087843537,
+          "stop" : 1569087843553,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "a618fcfeafd361a6",
+        "name" : "Test Jenkins Job details",
+        "time" : {
+          "start" : 1569087842756,
+          "stop" : 1569087850021,
+          "duration" : 7265
+        },
+        "status" : "broken",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "a0180b489a986d46",
+        "name" : "Test 3",
+        "time" : {
+          "start" : 1569087842756,
+          "stop" : 1569087843022,
+          "duration" : 266
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "ee1e74f1d27d8b9c",
+      "name" : "Basic login test",
+      "time" : {
+        "minDuration" : 125,
+        "maxDuration" : 125,
+        "sumDuration" : 125,
+        "start" : 1569087842788,
+        "stop" : 1569087842913,
+        "duration" : 125
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "2d8d6df87ceb9ec1",
+        "name" : "Test Execution TC1",
+        "time" : {
+          "start" : 1569087842788,
+          "stop" : 1569087842913,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

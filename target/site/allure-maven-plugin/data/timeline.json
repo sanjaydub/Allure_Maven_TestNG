@@ -1,0 +1,147 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 3,
+    "unknown" : 0,
+    "total" : 4
+  },
+  "time" : {
+    "minDuration" : 16,
+    "maxDuration" : 7265,
+    "sumDuration" : 7672,
+    "start" : 1569087842756,
+    "stop" : 1569087850021,
+    "duration" : 7265
+  },
+  "children" : [ {
+    "uid" : "b3bb9d42d0b504bd",
+    "name" : "DESKTOP-6AA63HT",
+    "time" : {
+      "minDuration" : 16,
+      "maxDuration" : 7265,
+      "sumDuration" : 7672,
+      "start" : 1569087842756,
+      "stop" : 1569087850021,
+      "duration" : 7265
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "ebb80bc287f9bf9",
+      "name" : "14908@DESKTOP-6AA63HT.pool-1-thread-3(13)",
+      "time" : {
+        "minDuration" : 16,
+        "maxDuration" : 125,
+        "sumDuration" : 141,
+        "start" : 1569087842788,
+        "stop" : 1569087843553,
+        "duration" : 765
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "e3d42fd91000ca9f",
+        "name" : "Test 4",
+        "time" : {
+          "start" : 1569087843537,
+          "stop" : 1569087843553,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      }, {
+        "uid" : "2d8d6df87ceb9ec1",
+        "name" : "Test Execution TC1",
+        "time" : {
+          "start" : 1569087842788,
+          "stop" : 1569087842913,
+          "duration" : 125
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "dd0a869748bba6d",
+      "name" : "14908@DESKTOP-6AA63HT.pool-1-thread-1(11)",
+      "time" : {
+        "minDuration" : 7265,
+        "maxDuration" : 7265,
+        "sumDuration" : 7265,
+        "start" : 1569087842756,
+        "stop" : 1569087850021,
+        "duration" : 7265
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "a618fcfeafd361a6",
+        "name" : "Test Jenkins Job details",
+        "time" : {
+          "start" : 1569087842756,
+          "stop" : 1569087850021,
+          "duration" : 7265
+        },
+        "status" : "broken",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    }, {
+      "uid" : "6e5b97caa4f8951d",
+      "name" : "14908@DESKTOP-6AA63HT.pool-1-thread-2(12)",
+      "time" : {
+        "minDuration" : 266,
+        "maxDuration" : 266,
+        "sumDuration" : 266,
+        "start" : 1569087842756,
+        "stop" : 1569087843022,
+        "duration" : 266
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "a0180b489a986d46",
+        "name" : "Test 3",
+        "time" : {
+          "start" : 1569087842756,
+          "stop" : 1569087843022,
+          "duration" : 266
+        },
+        "status" : "passed",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

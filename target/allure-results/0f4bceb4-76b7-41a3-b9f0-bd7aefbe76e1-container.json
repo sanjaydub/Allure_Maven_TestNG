@@ -1,0 +1,1 @@
+{"uuid":"0f4bceb4-76b7-41a3-b9f0-bd7aefbe76e1","name":"my.test.frw.suites.SampleSuiteITest.afterMethod","description":"","start":1569087850021,"stop":1569087850021,"children":["a4a8c441-73f6-4af0-b5ed-5c08e351cb75"],"afters":[{"name":"afterMethod","status":"passed","stage":"finished","description":"","start":1569087850021,"stop":1569087850021}]}

@@ -1,0 +1,72 @@
+{
+  "statistic" : {
+    "failed" : 0,
+    "broken" : 1,
+    "skipped" : 0,
+    "passed" : 0,
+    "unknown" : 0,
+    "total" : 1
+  },
+  "time" : {
+    "minDuration" : 7265,
+    "maxDuration" : 7265,
+    "sumDuration" : 7265,
+    "start" : 1569087842756,
+    "stop" : 1569087850021,
+    "duration" : 7265
+  },
+  "children" : [ {
+    "uid" : "3feb5c2bd0446c8e",
+    "name" : "Test defects",
+    "time" : {
+      "minDuration" : 7265,
+      "maxDuration" : 7265,
+      "sumDuration" : 7265,
+      "start" : 1569087842756,
+      "stop" : 1569087850021,
+      "duration" : 7265
+    },
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "type" : "TestGroupNode",
+    "children" : [ {
+      "uid" : "79ab8aae614b0818",
+      "name" : "Connection refused: connect",
+      "time" : {
+        "minDuration" : 7265,
+        "maxDuration" : 7265,
+        "sumDuration" : 7265,
+        "start" : 1569087842756,
+        "stop" : 1569087850021,
+        "duration" : 7265
+      },
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 1
+      },
+      "type" : "TestGroupNode",
+      "children" : [ {
+        "uid" : "a618fcfeafd361a6",
+        "name" : "Test Jenkins Job details",
+        "time" : {
+          "start" : 1569087842756,
+          "stop" : 1569087850021,
+          "duration" : 7265
+        },
+        "status" : "broken",
+        "flaky" : false,
+        "type" : "TestCaseNode"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,114 @@
+{
+  "uid" : "a0180b489a986d46",
+  "name" : "Test 3",
+  "fullName" : "my.test.frw.suites.SampleSuiteITest.testJobDetails3",
+  "historyId" : "594587cc4506c2c715bee2775bd7e9de",
+  "time" : {
+    "start" : 1569087842756,
+    "stop" : 1569087843022,
+    "duration" : 266
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "description" : "Description of Test 3",
+  "descriptionHtml" : "<p>Description of Test 3</p>",
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "statusDetails" : {
+      "flaky" : false
+    },
+    "steps" : [ {
+      "name" : "Type user / user",
+      "time" : {
+        "start" : 1569087842866,
+        "stop" : 1569087842881,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "user"
+      }, {
+        "name" : "password",
+        "value" : "password"
+      } ]
+    } ],
+    "attachments" : [ {
+      "uid" : "e88ff99d5a4285a",
+      "name" : "testJobDetails3",
+      "source" : "e88ff99d5a4285a.txt",
+      "type" : "text/plain",
+      "size" : 4
+    } ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1569087843522,
+      "stop" : 1569087843522,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "testClass",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testJobDetails3"
+  }, {
+    "name" : "parentSuite",
+    "value" : "MyArtifactSuite"
+  }, {
+    "name" : "suite",
+    "value" : "AllSuites"
+  }, {
+    "name" : "subSuite",
+    "value" : "my.test.frw.suites.SampleSuiteITest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6AA63HT"
+  }, {
+    "name" : "thread",
+    "value" : "14908@DESKTOP-6AA63HT.pool-1-thread-2(12)"
+  }, {
+    "name" : "epic",
+    "value" : "Allure examples"
+  }, {
+    "name" : "feature",
+    "value" : "TestNG support"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "org.testng.TestRunner@281e31d4"
+  } ],
+  "links" : [ {
+    "name" : "allure",
+    "type" : "mylink"
+  } ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "categories" : [ ]
+  }
+}

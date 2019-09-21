@@ -1,0 +1,41 @@
+[ {
+  "uid" : "e3d42fd91000ca9f",
+  "name" : "Test 4",
+  "time" : {
+    "start" : 1569087843537,
+    "stop" : 1569087843553,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a618fcfeafd361a6",
+  "name" : "Test Jenkins Job details",
+  "time" : {
+    "start" : 1569087842756,
+    "stop" : 1569087850021,
+    "duration" : 7265
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "a0180b489a986d46",
+  "name" : "Test 3",
+  "time" : {
+    "start" : 1569087842756,
+    "stop" : 1569087843022,
+    "duration" : 266
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d8d6df87ceb9ec1",
+  "name" : "Test Execution TC1",
+  "time" : {
+    "start" : 1569087842788,
+    "stop" : 1569087842913,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
