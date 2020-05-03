@@ -22,7 +22,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <testng.selenium.endpoint>https://google.com</testng.selenium.endpoint>
-        <aspectj.version>1.9.4</aspectj.version>
+        <aspectj.version>1.8.4</aspectj.version>
+		<jetty.http.port>9001</jetty.http.port>
     </properties>
 
     <dependencies>
@@ -71,11 +72,17 @@
         </dependency>
 
         <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>2.7.0</version>
-            <scope>test</scope>
-        </dependency>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-testng</artifactId>
+        <version>2.13.3</version>
+        <scope>test</scope>
+    </dependency>
+		
+		<!-- <dependency> -->
+            <!-- <groupId>ru.yandex.qatools.allure</groupId> -->
+            <!-- <artifactId>allure-testng-adaptor</artifactId> -->
+            <!-- <version>1.5.4</version> -->
+        <!-- </dependency> -->
 
 
     </dependencies>
@@ -83,28 +90,50 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.20</version>
+            <configuration>
+				<testFailureIgnore>true</testFailureIgnore>
+                <argLine>
+                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                </argLine>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjweaver</artifactId>
+                    <version>${aspectj.version}</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+		<plugin>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-maven</artifactId>
+			<version>2.8</version>
+			
+			<configuration>
+			   <properties>
+				   <allure.issues.tracker.pattern>http://example.com/%s</allure.issues.tracker.pattern>
+			   </properties>
+			   <allureDownloadUrl>https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/%s/allure-%s.zip</allureDownloadUrl>
+				<reportDirectory>${basedir}/target/allure-reports/</reportDirectory>
+				<!-- <outputDirectory>${basedir}/target/allure-reports/</outputDirectory> -->
+			</configuration>
+			
+		</plugin>
+			 <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.7.v20160115</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <!--<systemProperties>
-                        <testng.selenium.endpoint>${testng.selenium.endpoint}</testng.selenium.endpoint>
-                    </systemProperties>-->
+                    <webAppSourceDirectory>${project.build.directory}/site/allure-maven-plugin</webAppSourceDirectory>
+                    <httpConnector>
+                        <port>${jetty.http.port}</port>
+                    </httpConnector>
+                    <stopKey>stop</stopKey>
+                    <stopPort>1234</stopPort>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
@@ -113,9 +142,13 @@
         <excludeDefaults>true</excludeDefaults>
         <plugins>
             <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.9</version>
+                <groupId>ru.yandex.qatools.allure</groupId>
+				<artifactId>allure-maven-plugin</artifactId>
+                <version>2.5</version>
+				<configuration>
+				<outputDirectory>${basedir}/target/allure-reports/</outputDirectory> 
+				<allureResultsDirectory>${basedir}/target/allure-results</allureResultsDirectory> 
+				</configuration>
             </plugin>
 			
 			<plugin>
