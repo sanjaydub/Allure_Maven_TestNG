@@ -1,6 +1,7 @@
-<h1> Maven TestNG Allure Report</h1>
-<h1> Jenkinsfile for declarative pipeline</h1>
+<h1> Maven, TestNG, Allure Report</h1>
+<h1> Jenkinsfile for declarative pipeline - CI-CT</h1>
 
+<h3>commands</h3>
 ### Allure_Maven_TestNG
 mvn clean test
 
